@@ -6,7 +6,18 @@ class LoginPage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('这是登陆页面'),
+        child: Column(
+          children: <Widget>[
+            Expanded(child: Container(
+              color: Colors.blue,
+              child: Center(child: Text('top')),
+            )),
+            Expanded(child: Container(
+              color: Colors.red,
+              child: Center(child: Text('bottom'),),
+            ))
+          ],
+        )
       ),
     );
   }
