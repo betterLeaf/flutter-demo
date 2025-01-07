@@ -5,20 +5,15 @@ class LoginPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          children: <Widget>[
-            Expanded(child: Container(
-              color: Colors.blue,
-              child: Center(child: Text('top')),
-            )),
-            Expanded(child: Container(
-              color: Colors.red,
-              child: Center(child: Text('bottom'),),
-            ))
-          ],
-        )
+      appBar: AppBar(),
+      body:  Column(
+        children: [
+          Center(
+            child: Image.asset('assets/images/check.png', width: 150, height: 150, )
+          )
+        ],
       ),
     );
   }
+  
 }
