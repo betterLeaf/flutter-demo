@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/page02/home.dart';
 import 'package:flutter_demo/page03/switchRoute.dart';
+import 'package:flutter_demo/page04/hptest.dart';
 
 void main() {
   runApp(const MyApp());
@@ -116,33 +117,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             FilledButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context){
-                return Home(data: "home data 88888dsfhkjashfjhsdajhjdhfjhsdajkhfjkasdhfjkhsadjkfhaksdh");
+                return Hptest();
               }));
-            }, child: Text("normal")),
-            ElevatedButton(onPressed: (){}, child: Text("ElevatedButton")),
-            ElevatedButton.icon(onPressed: (){}, icon: Icon(Icons.add_a_photo), label: Text("elevated icon button")),
-            TextButton(onPressed: (){}, child: Text("text button")),
-            TextButton.icon(onPressed: (){}, icon: Icon(Icons.deck), label: Text("Text icon button")),
-            OutlinedButton(onPressed: (){}, child: Text("outline button")),
-            IconButton(onPressed: (){}, icon: Icon(Icons.theater_comedy)),
-            TextButton.icon(onPressed: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) {
-                  return SwitchRouter();
-                })
-              );
-            }, icon: Icon(Icons.switch_access_shortcut_add_rounded), label: Text("goSwitch")),
-            LinearProgressIndicator(
-              backgroundColor: Colors.grey[200],
-              valueColor: AlwaysStoppedAnimation(Colors.blue),
-              // value: .6,
-            ),
-            CircularProgressIndicator(
-              backgroundColor: Colors.grey[200],
-              valueColor: AlwaysStoppedAnimation(Colors.blue),
-              // value: .6,
-            )
+            }, child: Text("Dio get"))
           ],
         ),
       ),
